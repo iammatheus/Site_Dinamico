@@ -7,8 +7,8 @@
     $corpo.="<hr>".ucfirst($key).": ".$value;
   }
   $info = array('assunto'=>$assunto,'corpo'=>$corpo);
-  $mail = new Contato('smtp.gmail.com','mohammendkang1406@gmail.com','123456789mo','Matheus');
-  $mail->addAdress('mohammendkang1406@gmail.com','Matheus');
+  $mail = new Contato('smtp.gmail.com','seuemail','suasenha','seunome');
+  $mail->addAdress('email','nome');
   $mail->formatarEmail($info);
   if($mail->enviarEmail()){
     $data['sucesso'] = true;
