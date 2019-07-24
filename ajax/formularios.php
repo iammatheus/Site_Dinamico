@@ -1,5 +1,6 @@
 <?php
   include('../config.php');
+  require_once('../classes/Email.php');
   $data = array();
   $assunto = 'Nova mensagem do site!';
   $corpo = '';
