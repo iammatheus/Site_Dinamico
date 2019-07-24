@@ -1,0 +1,406 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Open Sans',sans-serif;
+}
+html, body{
+  overflow-x: hidden;
+}
+/*BOOT CSS*/
+img{
+  width: 100%;
+  max-width: 400px;
+}
+.center{
+  max-width: 1280px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+.w33{
+  width: 33.3%;
+  padding: 0 10px;
+}
+.w50{
+  padding: 0 2%;
+  width: 50%;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+
+/*Estilização do site*/
+.sucesso,.erro{
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  padding: 15px 2%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  background: #00c59e;
+  z-index: 6;
+  display: none;
+}
+.erro{
+  background: #c63c3c;
+}
+.overlay-loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  background: rgba(0,0,0,.4);
+  display: none;
+}
+.overlay-loading img{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+header{
+  background: #3d437a;
+  padding: 20px 0;
+}
+header .logo{
+  font-size: 25px;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+nav.desktop ul{
+  position: relative;
+  top: 6px;
+  list-style: none;
+}
+nav.desktop li{
+  font-weight: 300;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0 30px;
+}
+nav.desktop a{
+  color: white;
+  text-decoration: none;
+}
+nav.desktop a:hover{
+  text-decoration: underline;
+}
+.mobile{
+  display: none;
+}
+section.banner-container{
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.banner-single{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.banner-single > input[type=image]{
+  width: inherit;
+  height: inherit;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2;
+}
+section.banner-container form{
+  width: 95%;
+  max-width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+}
+section.banner-container form h2{
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+section.banner-container form input[type=email]{
+  width: 100%;
+  height: 66px;
+  color: #333;
+  font-size: 22px;
+  padding-left: 10px;
+  margin-top: 10px;
+  border: 0;
+}
+section.banner-container form input[type=submit]{
+  width: 100%;
+  height: 66px;
+  color: white;
+  background-color: #00c59e;
+  font-size: 22px;
+  margin-top: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+section.descricao-autor{
+  padding: 40px 0;
+}
+section.descricao-autor h2{
+  font-size: 25px;
+  font-weight: 300;
+  color: #444;
+}
+section.descricao-autor p{
+  font-size: 16px;
+  color: #444;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+section.especialidades{
+  padding: 40px 0;
+  background: #f5f5f5;
+}
+section.especialidades h2.title{
+  font-size: 30px;
+  font-weight: 400;
+  color: #999;
+  text-align: center;
+}
+.box-especialidade{
+  margin: 40px 0;
+  padding: 0 30px;
+  text-align: center;
+}
+.box-especialidade h3{
+  font-size: 40px;
+  color: #404580;
+}
+.box-especialidade h4{
+  color: #bababa;
+  text-align: center;
+  font-size: 25px;
+}
+.box-especialidade p{
+  color: #444;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+section.extras{
+  padding: 30px 0;
+  background: #404580;
+}
+.servicos-container, .depoimentos-container{
+  padding: 0 50px;
+}
+section.extras .title{
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.depoimento-single{
+  padding: 15px 0;
+  border-bottom: 1px solid #5056a0;
+}
+p.depoimento-descricao{
+  font-size: 15px;
+  color white;
+  font-weight: 300;
+  color: #ededed;
+}
+p.nome-autor{
+  font-size: 15px;
+  color white;
+  font-weight: bold;
+  color: white;
+  margin-top: 5px;
+}
+
+.servicos ul{
+  margin: 20px 0;
+}
+.servicos li{
+  font-size: 15px;
+  color white;
+  font-weight: 300;
+  color: #ededed;
+  margin-bottom: 15px;
+}
+
+footer{
+  background: #313462;
+  padding: 30px 0;
+}
+footer.fixed{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer p{
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+}
+section.error-404 h2{
+  font-size: 28px;
+  text-align: center;
+  color: #444;
+  font-weight: 400;
+  border-top: 2px solid #444;
+}
+section.error-404 p{
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 300;
+  color: #444;
+}
+section.error-404 a{
+  color: #444;
+}
+.wraper-404{
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 2%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#map{
+  width: 100%;
+  height: 400px;
+}
+.contato-container{
+  padding: 40px 0;
+  text-align: center;
+}
+.contato-container
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea{
+  width: 100%;
+  max-width: 800px;
+  height: 40px;
+  padding-left: 8px;
+  margin: 8px 0;
+  font-size: 16px;
+  color: #444;
+}
+.contato-container textarea{
+  height: 120px;
+  resize: vertical;
+  padding: 8px;
+}
+.contato-container
+input[type=submit]{
+  width: 140px;
+  height: 40px;
+  color: white;
+  background: #00c59e;
+  font-size: 17px;
+  border: 0;
+  cursor: pointer;
+}
+
+.bullets{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.bullets span{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #9a9a9a;
+}
+.bullets span.active-slider{
+  background-color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+  img{
+    float: none !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .w50,.w33{
+    width: 100%;
+    padding: 20px;
+  }
+  nav.desktop{
+    display: none;
+  }
+  nav.mobile{
+    display: block;
+  }
+  .icon-mobile{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  nav.mobile ul{
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: 3;
+    display: none;
+    text-align: center;
+    width: 100%;
+  }
+  nav.mobile li{
+    font-size: 17px;
+    padding: 8px 0;
+    font-weight: 300;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    transition: .12s;
+  }
+  nav.mobile li:hover{
+    background-color: #00c59e;
+  }
+  nav.mobile li a{
+    display: block;
+    color: #444;
+    text-decoration: none;
+  }
+  .box-especialidade{
+    padding: 40px 20px;
+    margin: 0;
+  }
+}

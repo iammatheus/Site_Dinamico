@@ -1,0 +1,397 @@
+/*General reset*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html,body{
+  height: 100%;
+  background: rgb(225, 225, 225);
+}
+body{overflow-x: hidden;}
+/****/
+
+/*Tabelas*/
+.wraper-table{overflow-x: auto;}
+table{
+  min-width: 900px;
+  margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+table tr:nth-of-type(1){color: white;}
+table tr{
+  color: #555;
+  border-bottom: 1px solid #ccc;
+}
+table td{padding: 8px;}
+table a.btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 4px 6px;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+}
+table a.btn.edit{background: #f4b03e;}
+table a.btn.delete{background: #e05c4e;}
+table a.btn.order{background: #0091ea;}
+/****/
+
+/*PAGINAÇÃO*/
+.paginacao{
+  margin: 20px 0;
+  text-align: center;
+}
+.paginacao a{
+  font-size: 14px;
+  margin: 0 8px;
+  display: inline-block;
+  padding: 3px 4px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #666;
+}
+.paginacao a.page-selected{
+  background: #dddddd;
+}
+/****/
+
+/*Box de alerta - sucesso/erro*/
+.box-alert{
+  text-align: center;
+  width: 100%;
+  padding: 8px 0;
+  color: white;
+}
+.box-alert i{
+  color: white;
+}
+.sucesso{
+  background: #00c59e;
+}
+.erro{
+  background: #f75353;
+}
+/****/
+
+/*Lembrar-me*/
+.form-group-login label{
+  font-size: 13px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.form-group-login input[type=checkbox]{
+  position: relative;
+  top: 3px;
+}
+form .form-group-login:nth-of-type(2){
+  position: relative;
+  top: 17px;
+}
+/****/
+
+/*Background Colors*/
+.bg-green{background: #13b3a4;}
+.bg-blue{background: #0091ea;}
+/****/
+
+/*PÁGINA DE LOGIN*/
+.box-login{
+  width: 95%;
+  max-width: 600px;
+  padding: 60px 2%;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 10px 15px 18px 0px rgba(0,0,0,0.53);
+}
+.box-login h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 19px;
+  margin: 10px 0;
+  color: black;
+}
+.box-login input[type=text],
+.box-login input[type=password]{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+  margin-top: 8px;
+}
+.btnsubmit{
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 16px;;
+  background: #00c59e;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+/*BOX ERROR DO PAINEL*/
+.erro-box{
+  width: 100%;
+  padding: 8px 2%;
+  text-align: center;
+  background: #f75353;
+  color: white;
+  font-size: 15px;
+}
+/*FIM DA PÁGINA DE LOGIN*/
+
+/*PÁGINA INICIAL - PAINEL DE CONTROLE*/
+.clear{clear: both;}
+.center{padding:0 2%; margin: 0 auto;}
+header{
+  position: relative;
+  left: 300px;
+  width: calc(100% - 300px);
+  padding: 10px 0;
+  background: #78909c;
+}
+.logout{
+  float: right;
+}
+.logout a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 10px;
+  position: relative;
+  top: 4px;
+}
+.menu-btn{
+  float: left;
+  cursor: pointer;
+  font-size: 23px;
+  color: white;
+}
+.menu-wraper{
+  width: 300px;
+}
+.menu{
+  overflow-x: hidden;
+  float: left;
+  overflow-y: auto;
+  width: 300px;
+  height: 100%;
+  padding: 10px 0;
+  background: #455a64;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.box-usuario{
+  text-align: center;
+}
+.avatar-usuario{
+  text-align: left;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #2f3d42;
+  display: inline-block;
+}
+.avatar-usuario i{
+  font-size: 50px;
+  color: #2f3d42;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.imagem-usuario{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  border: 3px solid #2f3d42;
+  border-radius: 50%;
+}
+.imagem-usuario img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.nome-usuario{
+  text-align: center;
+  margin-top: 15px;
+}
+.nome-usuario p{
+  color: white;
+  font-size: 16px;
+}
+
+/*Conteúdo principal do painel*/
+.w100{width: 100%;}
+.w50{width: 49%;}
+.w50page{width: 49%;}
+.left{float:left;}
+.right{float: right;}
+.content{
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+  padding: 30px;
+}
+.box-content{
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.box-content h2{font-weight: normal;}
+/****/
+
+.box-content h2 > i{
+  color: #333;
+}
+.items-menu{
+  margin-top: 30px;
+}
+.items-menu h2{
+  text-align: left;
+  font-weight: normal;
+  font-size: 17px;
+  background: #2f3d42;
+  color: white;
+  padding: 8px 2%;
+}
+.items-menu a{
+  display: block;
+  padding: 8px 2%;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid #2f3d42;
+}
+
+/*BOX METRICAS*/
+.box-metricas{
+  margin-top: 16px;
+  padding: 0 10px;
+}
+.box-metrica-single{
+  float: left;
+  position: relative;
+  width: 33.3%;
+  background: #f4b03e;
+  border: 5px solid white;
+}
+.box-metricas .box-metrica-single:nth-of-type(2){
+  background: #e05c4e;
+}
+.box-metricas .box-metrica-single:nth-of-type(3){
+  background: #0091ea;
+}
+.box-metrica-wraper{
+  padding: 10px 20px;
+  text-align: left;
+  color: white;
+}
+.box-metrica-wraper h2{
+  font-size: 23px;
+}
+.box-metrica-wraper p{
+  padding: 10px 0;
+  font-size: 20px;
+}
+/****/
+
+/*Ao clicar nas opões do menu do painel*/
+.menu-active{
+  background: #3c4d54;
+}
+.menu-active::before{
+  content: '\00BB  ';
+  font-size: 19px;
+}
+/****/
+/*FIM DA PÁGINA INICIAL DO PAINEL*/
+
+/*Listar,cadastrar,adicionar*/
+.box-content form{
+  margin: 30px 0;
+}
+.box-content form label{
+  font-size: 17px;
+  font-weight: 300;
+  display: block;
+}
+.box-content form input[type=password],
+.box-content form input[type=text],
+.box-content form textarea,
+.box-content form select{
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  width: 100%;
+  height: 40px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+.box-content form textarea{
+  height: 150px;
+  padding: 8px;
+  resize:  vertical;
+}
+.box-content .form-group{
+  margin: 15px 0;
+}
+.box-content form input[type=file]{
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+/****/
+
+@media screen and (max-width: 1100px){
+  .box-metrica-single{width: 100%;}
+}
+@media screen and (max-width: 768px){
+  .menu{
+    display: none;
+  }
+  .content{
+    width: 100%;
+    left: 0;
+  }
+  header{
+    left: 0;
+    width: 100%;
+  }
+  .box-metrica-single{
+    width: 100%;
+  }
+  .items-menu a{
+  }
+}
+
+@media screen and (max-width: 500px){
+  .w50page{width:100%;}
+  .box-metrica-single{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .menu-wraper{
+    width: 200px;
+  }
+}
