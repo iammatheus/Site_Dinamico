@@ -1,7 +1,7 @@
 # Site Dinâmico com PHP
 
 ## Painel - Opções
-![testegif3](https://user-images.githubusercontent.com/44850549/61842404-670c3680-ae6e-11e9-87f4-18c58a163d9a.gif)
+
 
 ### 1. Acessar o Painel - Login e Senha
 * admin
