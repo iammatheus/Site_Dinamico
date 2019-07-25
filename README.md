@@ -40,6 +40,8 @@
 * [Ir para o painel](http://www.sitedinamico.ga/painel)
 * [Meu Portfolio](http://www.meuportfolio.ml)
 
+### Extras
+- [X] Sistema de lembrar login
 
 
 
