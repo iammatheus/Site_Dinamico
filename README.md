@@ -4,7 +4,7 @@
 
 ## Painel - Opções
 
-## 1. Cadastro
+### 1. Cadastro
 - [x] Cadastrar depoimentos
 - [x] Cadastrar serviços
 - [x] Cadastrar slides
@@ -12,7 +12,7 @@
 - [x] Excluir
 - [x] Ordenar
 
-## 2. Gestão
+### 2. Gestão
 - [x] Listar depoimentos
 - [x] Listar serviços
 - [x] Listar slides
@@ -20,24 +20,24 @@
 - [x] Excluir
 - [x] Ordenar
 
-## 3. Administração do Painel
+### 3. Administração do Painel
 - [X] Cadastrar usuários
 - [x] Editar usuário: Imagem | Nome | Login | Senha
 - [x] Cargos: Administrador | Sub Administrador | Normal
 - [X] Excluir usuários
 
-## 4. Editar Site
+### 4. Editar Site
 - [X] Título
 - [X] Nome do autor
 - [X] Descrição do autor
 - [X] Ícones
 - [X] Descrição dos ícones
 
-## 5. Login e Senha
+### 5. Login e Senha
 * admin
 * admin
 
-## 6. Links
+### 6. Links
 * [Ir para o site](http://www.sitedinamico.ga/)
 * [Ir para o painel](http://www.sitedinamico.ga/painel)
 * [My Portfolio](http://www.meuportfolio.ml)
