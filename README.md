@@ -1,7 +1,8 @@
 # Site Dinâmico com PHP
 Link to my portfolio website: http://www.meuportfolio.ml
 
-## Quick links
+## Painel - Login
 
-
-* [Code Idea project](http://codeidea.ml/)
+* [Link para o painel](http://www.sitedinamico.ga/painel/)
+* login: admin
+* senha: admin
