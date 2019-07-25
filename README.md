@@ -42,6 +42,9 @@
 
 ### Extras
 - [X] Sistema de lembrar login
+- [X] Usuários online no site
+- [X] Usuários do painel
+- [X] Sistema de visitas
 
 
 
