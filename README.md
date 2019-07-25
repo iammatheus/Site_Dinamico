@@ -2,6 +2,8 @@
 
 ![testegif](https://user-images.githubusercontent.com/44850549/61841250-6d001880-ae6a-11e9-829f-5601f1b889e9.gif)
 
+## Painel - Opções
+
 ## 1. Cadastro
 - [x] Cadastrar depoimentos
 - [x] Cadastrar serviços
@@ -31,11 +33,17 @@
 - [X] Ícones
 - [X] Descrição dos ícones
 
-* [Site](http://www.sitedinamico.ga/)
+## 5. Login e Senha
+* admin
+* admin
+
+## 6. Links
+* [Ir para o site](http://www.sitedinamico.ga/)
+* [Ir para o painel](http://www.sitedinamico.ga/painel)
 * [My Portfolio](http://www.meuportfolio.ml)
 
 
 
 
-## Painel
+
 
