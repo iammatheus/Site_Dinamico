@@ -1,6 +1,41 @@
 # Site Dinâmico com PHP
+
+![testegif](https://user-images.githubusercontent.com/44850549/61841250-6d001880-ae6a-11e9-829f-5601f1b889e9.gif)
+
+## 1. Cadastro
+- [x] Cadastrar depoimentos
+- [x] Cadastrar serviços
+- [x] Cadastrar slides
+- [x] Editar
+- [x] Excluir
+- [x] Ordenar
+
+## 2. Gestão
+- [x] Listar depoimentos
+- [x] Listar serviços
+- [x] Listar slides
+- [x] Editar
+- [x] Excluir
+- [x] Ordenar
+
+## 3. Administração do Painel
+- [X] Cadastrar usuários
+- [x] Editar usuário: Imagem | Nome | Login | Senha
+- [x] Cargos: Administrador | Sub Administrador | Normal
+- [X] Excluir usuários
+
+## 4. Editar Site
+- [X] Título
+- [X] Nome do autor
+- [X] Descrição do autor
+- [X] Ícones
+- [X] Descrição dos ícones
+
 * [Site](http://www.sitedinamico.ga/)
 * [My Portfolio](http://www.meuportfolio.ml)
 
+
+
+
 ## Painel
-![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/44850549/61840732-856f3380-ae68-11e9-980a-1da5e8980801.gif)
+
