@@ -1,7 +1,7 @@
 # Site Dinâmico com PHP
 
 ## Painel - Opções
-![testegif2](https://user-images.githubusercontent.com/44850549/61841822-6377b000-ae6c-11e9-9ea0-6066ca06b9a6.gif)
+![testegif3](https://user-images.githubusercontent.com/44850549/61842404-670c3680-ae6e-11e9-87f4-18c58a163d9a.gif)
 
 ### 1. Acessar o Painel - Login e Senha
 * admin
@@ -38,7 +38,7 @@
 ### 6. Links
 * [Ir para o site](http://www.sitedinamico.ga/)
 * [Ir para o painel](http://www.sitedinamico.ga/painel)
-* [My Portfolio](http://www.meuportfolio.ml)
+* [Meu Portfolio](http://www.meuportfolio.ml)
 
 
 
