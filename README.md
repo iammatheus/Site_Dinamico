@@ -1,10 +1,9 @@
 # Site Dinâmico com PHP
 
-![testegif](https://user-images.githubusercontent.com/44850549/61841250-6d001880-ae6a-11e9-829f-5601f1b889e9.gif)
+![testegif2](https://user-images.githubusercontent.com/44850549/61841822-6377b000-ae6c-11e9-9ea0-6066ca06b9a6.gif)
 
 ## Painel - Opções
-### 0. Login e Senha
-* admin
+### 0. Acessar o painel - Login e Senha
 * admin
 
 ### 1. Cadastro
