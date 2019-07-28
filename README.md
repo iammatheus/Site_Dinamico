@@ -35,16 +35,16 @@
 - [X] Ícones
 - [X] Descrição dos ícones
 
-### 6. Links
-* [Ir para o site](http://www.sitedinamico.ga/)
-* [Ir para o painel](http://www.sitedinamico.ga/painel)
-* [Meu Portfolio](http://www.meuportfolio.ml)
-
-### Extras
+### 6. Extras
 - [X] Sistema de lembrar login
 - [X] Usuários online no site
 - [X] Usuários do painel
 - [X] Sistema de visitas
+
+### 7. Links
+* [Ir para o site](http://www.sitedinamico.ga/)
+* [Ir para o painel](http://www.sitedinamico.ga/painel)
+* [Meu Portfolio](http://www.meuportfolio.ml)
 
 
 
