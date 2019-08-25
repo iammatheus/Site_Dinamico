@@ -22,26 +22,35 @@
 - [x] Excluir
 - [x] Ordenar
 
-### 4. Administração do Painel
+### 4. Gestão de Notícias
+- [x] Cadastrar Categorias
+- [x] Listar Categorias
+- [x] Cadastrar Notícias
+- [x] Listar Notícias
+- [x] Editar
+- [x] Excluir
+- [x] Ordenar
+
+### 5. Administração do Painel
 - [X] Cadastrar usuários
 - [x] Editar usuário: Imagem | Nome | Login | Senha
 - [x] Cargos: Administrador | Sub Administrador | Normal
 - [X] Excluir usuários
 
-### 5. Editar Site
+### 6. Editar Site
 - [X] Título
 - [X] Nome do autor
 - [X] Descrição do autor
 - [X] Ícones
 - [X] Descrição dos ícones
 
-### 6. Extras
+### 7. Extras
 - [X] Sistema de lembrar login
 - [X] Usuários online no site
 - [X] Usuários do painel
 - [X] Sistema de visitas
 
-### 7. Links
+### 8. Links
 * [Ir para o site](http://www.sitedinamico.ga/)
 * [Ir para o painel](http://www.sitedinamico.ga/painel)
 * [Meu Portfolio](http://www.meuportfolio.ml)
