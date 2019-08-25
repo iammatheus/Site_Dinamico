@@ -12,6 +12,9 @@ img{
   width: 100%;
   max-width: 400px;
 }
+.txt-center{
+  text-align: center;
+}
 .center{
   max-width: 1280px;
   padding: 0 2%;
@@ -38,8 +41,9 @@ img{
 /*Estilização do site*/
 .sucesso,.erro{
   position: fixed;
-  right: 20px;
-  top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
   padding: 15px 2%;
   color: #fff;
   font-weight: bold;
@@ -47,6 +51,7 @@ img{
   background: #00c59e;
   z-index: 6;
   display: none;
+  text-align: center;
 }
 .erro{
   background: #c63c3c;
@@ -169,6 +174,14 @@ section.descricao-autor h2{
   font-size: 25px;
   font-weight: 300;
   color: #444;
+}
+section.descricao-autor img{
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 section.descricao-autor p{
   font-size: 16px;
@@ -347,11 +360,179 @@ input[type=submit]{
   background-color: white;
 }
 
+/*PORTAL DE NOTÍCIAS*/
+/*header*/
+.header-noticias{
+  width: 100%;
+  background: #333864;
+  padding: 40px 0;
+}
+.header-noticias h2:nth-of-type(1){
+  font-size: 41px;
+}
+.header-noticias h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+}
+.header-noticias h2 > b{
+  color: #f40b5c;
+}
+/***/
 
+/*CONTAINER-PORTAL*/
+/*Pesquisar*/
+section.container-portal{
+  padding: 50px 0;
+}
+.sidebar{
+  float: left;
+  width: 30%;
+}
+.box-content-sidebar{
+  width: 100%;
+  background: #dddddd;
+  color: #333864;
+  padding: 15px;
+  margin-bottom: 40px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.box-content-sidebar h3{
+  font-size: 18px;
+  font-weight: normal;
+}
+.box-content-sidebar
+input[type=text],
+select{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #dddddd;
+  padding-left: 8px;
+  margin: 10px 0;
+}
+.box-content-sidebar input[type=submit]{
+  width: 115px;
+  height: 35px;
+  font-weight: bold;
+  margin: 10px 0;
+  background: #f40b5c;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+/***/
 
+/*Autor portal*/
+.autor-box-portal{
+  margin-top: 10px;
+}
+.box-img-autor{
+  width: 160px;
+  height: 160px;
+  margin: 20px 0;
+  background-image: url('../images/foto.jpg');
+  background-size: 100% 100%;
+  display: inline-block;
+  border-radius: 50%;
+}
+.texto-autor-portal h3,
+.texto-autor-portal p{
+  color: #646464;
+}
+.texto-autor-portal p{
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: lighter;
+}
+/***/
 
+/*conteudo portal*/
+.conteudo-portal{
+  float: left;
+  width: 70%;
+  padding: 0 3.5%;
+}
+.header-conteudo-portal{
+  color: #333864;
+}
+.header-conteudo-portal h2{
+  font-size: 23px;
+  font-weight: bold;
+}
+.header-conteudo-portal h2>span{
+  border-top: 4px solid #333864;
+}
+.box-single-conteudo{
+  margin: 15px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.box-single-conteudo h2{
+  color: #646464;
+  font-weight: normal;
+  font-size: 22px
+}
+.box-single-conteudo p{
+  color: #646464;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.box-single-conteudo a{
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 3px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: white;
+  background: #00b95c;
+  font-size: 15px;
+}
+.paginator a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 4px;
+  margin: 0 10px;
+  color: rgb(100,100,100);
+  border: 1px solid #dbdbdb;
+}
+.paginator a.active-page{
+  background: #dddddd;
+}
 
-
+/*Notícia Single*/
+section.noticia-single{
+  padding: 40px 0;
+  color: #646464;
+}
+section.noticia-single h1{
+  font-size: 30px;
+  border-bottom: 2px solid #646464;
+}
+section.noticia-single header{
+  background: transparent;
+}
+section.noticia-single h2,
+section.noticia-single h3,
+section.noticia-single p{
+  margin: 10px 0;
+}
+section.noticia-single article{
+  margin-top: 15px;
+}
+section.noticia-single ul{
+  margin: 10px 0;
+  list-style-position: inside;
+}
+section.noticia-single img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
 
 @media screen and (max-width: 768px){
   img{
@@ -402,5 +583,15 @@ input[type=submit]{
   .box-especialidade{
     padding: 40px 20px;
     margin: 0;
+  }
+
+  /*PORTAL NOTÍCIAS*/
+  .conteudo-portal{
+    width: 100%;
+    padding-left: 0;
+  }
+  .sidebar{
+    width: 100%;
+    text-align: center;
   }
 }

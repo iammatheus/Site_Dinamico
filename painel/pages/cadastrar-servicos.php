@@ -6,10 +6,13 @@
       verificaPermissaoPagina(2);
       if(isset($_POST['acao'])){
         if(Painel::insert($_POST)){
-          Painel::alert('sucesso','Serviço adicionado com sucesso!');
+          Painel::redirect(INCLUDE_PATH_PAINEL.'cadastrar-servicos?sucesso');
         }else{
           Painel::alert('erro','Campos vazios não são permitidos!');
         }
+      }
+      if(isset($_GET['sucesso']) && !isset($_POST['acao'])){
+        Painel::alert('sucesso','Serviço cadastrado com sucesso!');
       }
     ?>
     <div class="form-group">
@@ -22,4 +25,5 @@
       <input class="btnsubmit" type="submit" name="acao" value="Cadastrar">
     </div><!--form-group-->
   </form>
+  <a class="A" href="listar-servicos">Serviços Cadastrados</a>
 </div><!--box-content-->

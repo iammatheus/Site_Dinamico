@@ -10,6 +10,7 @@ html,body{
   background: rgb(225, 225, 225);
 }
 body{overflow-x: hidden;}
+.A{color: #333; font-size: 13px;}
 /****/
 
 /*Tabelas*/
@@ -378,8 +379,6 @@ header{
   }
   .box-metrica-single{
     width: 100%;
-  }
-  .items-menu a{
   }
 }
 

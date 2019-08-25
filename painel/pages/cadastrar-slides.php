@@ -18,9 +18,12 @@
             $imagem = Usuario::uploadImagem($imagem);
             $arr = ['nome'=>$nome, 'slide'=>$imagem,'order_id'=>'0','nome_tabela'=>'tb_sites.slides'];
             Painel::insert($arr);
-            Painel::alert('sucesso','O cadastro do slide foi efetuado com sucesso!');
+            Painel::redirect(INCLUDE_PATH_PAINEL.'cadastrar-slides?sucesso');
           }
         }
+      }
+      if(isset($_GET['sucesso']) && !isset($_POST['acao'])){
+        Painel::alert('sucesso','Slide cadastrado com sucesso!');
       }
     ?>
 
@@ -36,4 +39,5 @@
       <input class="btnsubmit" type="submit" name="acao" value="Cadastrar">
     </div><!--form-group-->
   </form>
+  <a class="A" href="listar-slides">Slides Cadastrados</a>
 </div><!--box-content-->

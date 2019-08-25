@@ -1,5 +1,5 @@
 $(function(){
-  $('body').on('submit','form',function(){
+  $('body').on('submit','form.ajax-form',function(){
     var form = $(this);
     $.ajax({
       beforeSend:function(){
@@ -12,13 +12,13 @@ $(function(){
     }).done(function(data){
       if(data.sucesso){
         $('.overlay-loading').fadeOut();
-        $('.sucesso').fadeIn();
+        $('.sucesso').slideToggle();
         setTimeout(function(){
           $('.sucesso').fadeOut();
         },3000)
       }else if(data.erro){
         $('.overlay-loading').fadeOut();
-        $('.erro').fadeIn();
+        $('.erro').slideToggle();
         setTimeout(function(){
           $('.erro').fadeOut();
         },3000)

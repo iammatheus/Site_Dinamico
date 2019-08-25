@@ -2,8 +2,8 @@
   session_start();
   date_default_timezone_set('America/Sao_Paulo');
   $autoload = function($class){
-    if($class == 'Contato'){
-      include('classes/Contato.php');
+    if($class == 'Email'){
+      require_once('classes/Email.php');
     }
     include('classes/'.$class.'.php');
   };
@@ -49,6 +49,12 @@
     }else{
       include('painel/pages/permissao_negada.php');
       die();
+    }
+  }
+
+  function recoverPost($post){
+    if(isset($_POST[$post])){
+      echo $_POST[$post];
     }
   }
 ?>

@@ -33,4 +33,5 @@
       <input class="btnsubmit" type="submit" name="acao" value="Atualizar">
     </div><!--form-group-->
   </form>
+  <a class="A" href="listar-servicos">Serviços Cadastrados</a>
 </div><!--box-content-->

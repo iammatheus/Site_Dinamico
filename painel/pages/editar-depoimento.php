@@ -41,4 +41,5 @@
       <input class="btnsubmit" type="submit" name="acao" value="Atualizar">
     </div><!--form-group-->
   </form>
+  <a class="A" href="listar-depoimentos">Depoimentos Cadastrados</a>
 </div><!--box-content-->

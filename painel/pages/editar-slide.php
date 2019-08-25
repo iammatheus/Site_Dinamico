@@ -8,7 +8,7 @@
   }
 ?>
 <div class="box-content">
-  <h2><i class="fas fa-file-signature"></i> Editar Slide</h2>
+  <h2><i class="fas fa-edit"></i> Editar Slide</h2>
   <form method="post" enctype="multipart/form-data">
 
     <?php
@@ -52,4 +52,5 @@
       <input class="btnsubmit" type="submit" name="acao" value="Atualizar">
     </div><!--form-group-->
   </form>
+  <a class="A" href="listar-slides">Slides Cadastrados</a>
 </div><!--box-content-->

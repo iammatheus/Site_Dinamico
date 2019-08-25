@@ -51,6 +51,7 @@
             <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
             <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
             <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>noticias">Notícias</a></li>
             <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
           </ul>
         </nav><!--desktop-->
@@ -62,6 +63,7 @@
             <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
             <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
             <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>noticias">Notícias</a></li>
             <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
           </ul>
         </nav><!--mobile-->
@@ -75,8 +77,13 @@
           include('pages/'.$url.'.php');
         }else{
           if($url != 'depoimentos' && $url != 'servicos'){
-            $pagina404 = true;
-            include('pages/404.php');
+            $urlPar = explode('/',$url)[0];
+            if($urlPar != 'noticias'){
+              $pagina404 = true;
+              include('pages/404.php');
+            }else{
+              include('pages/noticias.php');
+            }
           }else{
             include('pages/home.php');
           }
@@ -109,6 +116,19 @@
     <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
     <?php } ?>
 
+    <?php
+      if(is_array($url) && strstr($url[0],'noticias') !== false){
+    ?>
+      <script>
+        $(function(){
+          $('select').change(function(){
+            location.href=include_path+"noticias/"+$(this).val();
+          })
+        })
+      </script>
+    <?php
+      }
+    ?>
 
   </body>
 </html>

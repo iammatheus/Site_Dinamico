@@ -43,6 +43,11 @@
           <a <?php selecionadoMenu('listar-depoimentos'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-depoimentos">Listar Depoimentos</a>
           <a <?php selecionadoMenu('listar-servicos'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-servicos">Listar Serviços</a>
           <a <?php selecionadoMenu('listar-slides'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>
+          <h2>Gestão de Notícias</h2>
+          <a <?php selecionadoMenu('cadastrar-categorias'); verificaPermissaoMenu(2);?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-categorias">Cadastrar Categorias</a>
+          <a <?php selecionadoMenu('listar-categorias'); verificaPermissaoMenu(2);?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-categorias">Listar Categorias</a>
+          <a <?php selecionadoMenu('cadastrar-noticias'); verificaPermissaoMenu(2);?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-noticias">Cadastrar Notícias</a>
+          <a <?php selecionadoMenu('listar-noticias'); verificaPermissaoMenu(2);?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-noticias">Listar Notícias</a>
           <h2>Administração do Painel</h2>
           <a <?php selecionadoMenu('editar-usuario'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
           <a <?php selecionadoMenu('adicionar-usuario'); verificaPermissaoMenu(2); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuários</a>
@@ -71,5 +76,13 @@
 
   <script src="<?php echo INCLUDE_PATH ?>js/jquery.js"></script>
   <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/main.js"></script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+  <script>
+    tinymce.init({
+      selector:'.tinymce',
+      plugins:'image',
+      height: 400
+    });
+  </script>
   </body>
   </html>

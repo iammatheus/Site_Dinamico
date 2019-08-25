@@ -33,27 +33,30 @@
             $usuario = new Usuario();
             $imagem = Usuario::uploadImagem($imagem);
             $usuario->cadastrarUsuario($login,$password,$imagem,$nome,$cargo);
-            Painel::alert('sucesso','O cadastro do usuário '.$login.' foi feito com sucesso!');
+            Painel::redirect(INCLUDE_PATH_PAINEL.'adicionar-usuario?sucesso');
           }
         }
+      }
+      if(isset($_GET['sucesso']) && !isset($_POST['acao'])){
+        Painel::alert('sucesso','Usuário cadastrado com sucesso!');
       }
     ?>
 
     <div class="form-group">
       <label>Login:</label>
-      <input class="nome" type="text" name="login">
+      <input class="nome" type="text" name="login" value="<?php echo recoverPost('login'); ?>">
     </div><!--form-group-->
     <div class="form-group">
       <label>Nome:</label>
-      <input class="nome" type="text" name="nome">
+      <input class="nome" type="text" name="nome" value="<?php echo recoverPost('nome'); ?>">
     </div><!--form-group-->
     <div class="form-group">
       <label>Senha:</label>
-      <input type="password" name="password">
+      <input type="password" name="password" value="<?php echo recoverPost('password'); ?>">
     </div><!--form-group-->
     <div class="form-group">
       <label>Cargo:</label>
-      <select name="cargo">
+      <select name="cargo" value="<?php echo recoverPost('cargo'); ?>">
         <?php
           foreach (Painel::$cargos as $key => $value) {
             if($key < $_SESSION['cargo'])

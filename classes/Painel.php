@@ -6,6 +6,21 @@
       '1' => 'Sub Administrador',
       '2' => 'Administrador'
     ];
+    public static function generateSlug($str){
+			$str = mb_strtolower($str);
+			$str = preg_replace('/(â|á|ã|à)/', 'a', $str);
+			$str = preg_replace('/(ê|é|è)/', 'e', $str);
+			$str = preg_replace('/(í|ì)/', 'i', $str);
+			$str = preg_replace('/(ú|ù)/', 'u', $str);
+			$str = preg_replace('/(ó|ò|ô|õ)/', 'o',$str);
+			$str = preg_replace('/(_|\/|!|\?|#)/', '',$str);
+			$str = preg_replace('/( )/', '-',$str);
+			$str = preg_replace('/ç/','c',$str);
+			$str = preg_replace('/(-[-]{1,})/','-',$str);
+			$str = preg_replace('/(,)/','-',$str);
+			$str=strtolower($str);
+			return $str;
+		}
 
     public static function logado(){
       return isset($_SESSION['login']) ? true : false;

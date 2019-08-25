@@ -10,7 +10,7 @@
   <div class="overlay"></div>
   <div class="center">
 
-    <form method="post" action="Contato.php">
+    <form method="post" action="Contato.php" class="ajax-form">
       <h2>Qual o seu melhor email?</h2>
       <input type="email" name="email" placeholder="exemplo@hotmail.com" required>
       <input type="hidden" name="identificador" value="form_cadastro">
@@ -22,12 +22,9 @@
 
 <section class="descricao-autor">
   <div class="center">
-    <div class="w50 left">
-      <h2><?php echo $infoSite['nome_autor']; ?></h2>
+    <div class="w100 left">
+      <h2 class="txt-center"><img src="<?php INCLUDE_PATH ?>images/foto.jpg"/><?php echo $infoSite['nome_autor']; ?></h2>
       <p><?php echo $infoSite['descricao']; ?></p>
-    </div><!--w50-->
-    <div class="w50 left">
-      <img class="right" src="<?php echo INCLUDE_PATH; ?>images/foto.jpg" alt="Foto Autor">
     </div><!--w50-->
     <div class="clear"></div>
   </div><!--center-->

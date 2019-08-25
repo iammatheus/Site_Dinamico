@@ -1,5 +1,6 @@
 <?php
   include('../config.php');
+  require_once("../classes/Email.php");
   $data = array();
   $assunto = 'Nova mensagem do site!';
   $corpo = '';
@@ -7,8 +8,8 @@
     $corpo.="<hr>".ucfirst($key).": ".$value;
   }
   $info = array('assunto'=>$assunto,'corpo'=>$corpo);
-  $mail = new Contato('smtp.gmail.com','mohammendkang1406@gmail.com','123456789mo','Matheus');
-  $mail->addAdress('mohammendkang1406@gmail.com','Matheus');
+  $mail = new Email('smtp.gmail.com','mohammendkang1406@gmail.com','123456789mo','Matheus');
+  $mail->addAddress('mohammendkang1406@gmail.com','Matheus');
   $mail->formatarEmail($info);
   if($mail->enviarEmail()){
     $data['sucesso'] = true;
